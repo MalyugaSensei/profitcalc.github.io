@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    font-size: 18pt;
+    font-family: 'Balsamiq Sans', cursive;
+    background: rgba(106,33,130,1);
+    background: linear-gradient(to right, rgba(106,33,130,1) 0%, rgba(187,47,233,1) 25%, rgba(118,56,204,1) 50%, rgba(12,72,237,1) 75%, rgba(6,63,116,1) 100%);
+}
+
+.calc-window-parent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.calc-window {
+}
+
+.text-message {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.change-options {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.option {
+    padding: 0 15px;
+}

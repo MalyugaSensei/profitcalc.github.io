@@ -4,38 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="text-message">
-        Чем будем заниматься?
-    </div>
-    <div class="change-options">
-        <div class="option-buy">Покупать</div>
-        <div class="option-auto-buy">Автопокупка</div>
-    </div>
-    <div class="change-area" style="display: none;">
-        <div class="dmarket service-option" data-service-type="dmarket">DMarket</div>
-        <div class="steam service-option" data-service-type="steam">Steam</div>
-        <div class="dm-csanal service-option" data-service-type="dm-csanal">DMarket + CSAnalyst</div>
-        <div class="waxpeer service-option" data-service-type="waxpeer">Waxpeer</div>
-    </div>
-    <div class="change-deposit" style="display: none;">
-        <div class="deposit-message">
-            Текущий курс валют
-        </div>
-        <div class="rate">
-            <div class="usd"></div>
-            <div class="eur"></div>
-        </div>
-        <div class="visa deposit-option" data-deposit-type="visa">Visa</div>
-        <div class="bitcoin deposit-option" data-deposit-type="bitcoin">BitCoint</div>
-        <div class="skins deposit-option" data-deposit-type="skins">Скины</div>
-    </div>
-    <div class="input-price" style="display: none;">
-        <input type="number" name="area" id="" class="price-area">
-        <input type="number" name="any" id="" class="price-any">
-        <div class="calc">Расчитать</div>
+    <div class="calc-window-parent">
+        <div class="calc-window">
+            <div class="text-message">
+                Чем будем заниматься?
+            </div>
+            <div class="change-options">
+                <div class="option" id="buy">Покупать</div>
+                <div class="option" id="auto-buy">Автопокупка</div>
+            </div>
+            <div class="change-serv" style="display: none;">
+                <div class="service-option" id="dmarket">DMarket</div>
+                <div class="service-option" id="steam">Steam</div>
+                <div class="service-option" id="dm-csanal">DMarket + CSAnalyst</div>
+                <div class="service-option" id="waxpeer">Waxpeer</div>
+            </div>
+            <div class="change-deposit" style="display: none;">
+                <div class="deposit-message">
+                    Текущий курс валют
+                </div>
+                <div class="rate">
+                    <div class="usd"></div>
+                    <div class="eur"></div>
+                </div>
+                <div class="deposit-option" id="visa">Visa</div>
+                <div class="deposit-option" id="bitcoin">BitCoint</div>
+                <div class="deposit-option" id="skins">Скины</div>
+            </div>
+            <div class="input-price" style="display: none;">
+                <input type="number" name="serv" id="" class="price-serv">
+                <input type="number" name="any" id="" class="price-any">
+                <div class="calc">Расчитать</div>
+            </div>
+        </div>  
     </div>
     <script src="script.js"></script>
 </body>
