@@ -17,13 +17,14 @@ $('.option').on('click', function (e) {
     var option = $(this).attr('id');
     mode = option;
     changeOption(option);
+    console.log(mode);
 });
 
 $('.service-option').on('click', function (e) {
     e.preventDefault();
     $('.change-serv').hide();
     var servType = $(this).attr('id');
-    changeService(servType);
+    changeService(servType, mode);
 });
 
 $('.deposit-option').on( 'click', function (e) { 
@@ -62,6 +63,7 @@ $('.calc').on('click', function (e) {
 });
 
 function changeOption(option) {
+    console.log(mode);
     switch (option) {
         case "buy" :
             $('.text-message').html('Выберите площадку');
@@ -76,6 +78,7 @@ function changeOption(option) {
 }
 
 function changeService (servType, mode) {
+    console.log(mode);
     switch (servType) {
         case "dmarket" :
             if (mode == "buy") {

@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
 
 body {
     margin: 0 auto;
     width: 100%;
     height: 100%;
     font-size: 18pt;
-    font-family: 'Balsamiq Sans', cursive;
-    background: rgba(106,33,130,1);
-    background: linear-gradient(to right, rgba(106,33,130,1) 0%, rgba(187,47,233,1) 25%, rgba(118,56,204,1) 50%, rgba(12,72,237,1) 75%, rgba(6,63,116,1) 100%);
+    font-family: 'Comfortaa', cursive;
 }
 
 .calc-window-parent {
+    background: #dadada;
     width: 100%;
     height: 100%;
     display: flex;
@@ -20,9 +19,15 @@ body {
     position: fixed;
     left: 0;
     top: 0;
+    text-align: center;
 }
 
 .calc-window {
+    padding: 20px;
+    box-shadow: 0 4px 9px 0 rgba(67, 65, 79, 0.1);
+    border-radius: 20px;
+    background-color: #fff;
+    color: #141414;
 }
 
 .text-message {
@@ -36,6 +41,44 @@ body {
     justify-content: space-around;
 }
 
-.option {
-    padding: 0 15px;
+.button {
+    background: #412973;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 20px 20px;
+    transition: ease-in-out 0.1s;
+    color: #fff;
+    position: relative;
+}
+
+.button:hover {
+    color: #fff;
+    background: #6a4da4;
+    transition: ease-in-out 0.1s;
+}
+
+.change-serv {
+    display: flex;
+}
+
+.change-deposit {
+
+}
+
+.input-block {
+    margin: 20px;
+}
+
+.first-price, .second-price {
+    text-align: right;
+    margin: 10px 0;
+}
+
+.input-block input {
+    font-size: 14pt;
+    margin-left: 10px;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid black;
 }

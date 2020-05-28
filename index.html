@@ -14,14 +14,14 @@
                 Чем будем заниматься?
             </div>
             <div class="change-options">
-                <div class="option" id="buy">Покупать</div>
-                <div class="option" id="auto-buy">Автопокупка</div>
+                <div class="option button" id="buy">Покупать</div>
+                <div class="option button" id="auto-buy">Автозакупка</div>
             </div>
             <div class="change-serv" style="display: none;">
-                <div class="service-option" id="dmarket">DMarket</div>
-                <div class="service-option" id="steam">Steam</div>
-                <div class="service-option" id="dm-csanal">DMarket + CSAnalyst</div>
-                <div class="service-option" id="waxpeer">Waxpeer</div>
+                <div class="service-option button" id="dmarket">DMarket</div>
+                <div class="service-option button" id="steam">Steam</div>
+                <div class="service-option button" id="dm-csanal">DMarket + CSAnalyst</div>
+                <div class="service-option button" id="waxpeer">Waxpeer</div>
             </div>
             <div class="change-deposit" style="display: none;">
                 <div class="deposit-message">
@@ -31,14 +31,20 @@
                     <div class="usd"></div>
                     <div class="eur"></div>
                 </div>
-                <div class="deposit-option" id="visa">Visa</div>
-                <div class="deposit-option" id="bitcoin">BitCoint</div>
-                <div class="deposit-option" id="skins">Скины</div>
+                <div class="deposit-option button" id="visa">Visa</div>
+                <div class="deposit-option button" id="bitcoin">BitCoint</div>
+                <div class="deposit-option button" id="skins">Скины</div>
             </div>
             <div class="input-price" style="display: none;">
-                <input type="number" name="serv" id="" class="price-serv">
-                <input type="number" name="any" id="" class="price-any">
-                <div class="calc">Расчитать</div>
+                <div class="input-block">
+                    <div class="first-price">
+                        <input type="number" name="serv" id="" class="price-serv">
+                    </div>
+                    <div class="second-price">
+                        <input type="number" name="any" id="" class="price-any">
+                    </div>
+                </div>
+                <div class="calc button">Расчитать</div>
             </div>
         </div>  
     </div>
